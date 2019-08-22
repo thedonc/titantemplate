@@ -40,10 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jobs.apps.JobsConfig',
     'landing.apps.LandingConfig',
     'mail.apps.MailConfig',
-    'webpack_loader'
+    'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'portfolio.urls'
+ROOT_URLCONF = 'root.urls'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
@@ -78,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'portfolio.wsgi.application'
+WSGI_APPLICATION = 'root.wsgi.application'
 
 
 # Database
@@ -87,7 +86,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfoliodb',
+        'NAME': 'fhdb',
         'USER':'docker',
         'PASSWORD':'docker',
         'HOST':'127.0.0.1',
