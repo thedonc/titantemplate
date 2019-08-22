@@ -23,5 +23,4 @@ import landing.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', landing.views.home, name='home'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+]
